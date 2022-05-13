@@ -5,12 +5,12 @@ class Functions {
   final int height;
   final int weight;
 
-  final double _bmi =0.0;
+   double _bmi =0.0;
 
   Functions({required this.height , required this.weight});
 
   String calculateBMI() {
-    double _bmi = weight / pow(height/100, 2);
+    _bmi = weight / pow(height/100, 2);
     return _bmi.toStringAsFixed(1);
   }
 
