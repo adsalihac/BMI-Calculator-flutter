@@ -20,7 +20,7 @@ class ResultPage extends StatelessWidget {
         title: const Text('Your Result'),
       ),
       body: Column(
-        mainAxisAlignment: MainAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Expanded(
               child: Container(
@@ -30,10 +30,13 @@ class ResultPage extends StatelessWidget {
               )
           ),
           Expanded(
+
             flex: 5,
             child: ReusableCard(
               colour: kActiveCardColour,
               cardChild: Column(
+                mainAxisSize: MainAxisSize.max,
+
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children:  [
